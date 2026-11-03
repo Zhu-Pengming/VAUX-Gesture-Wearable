@@ -10,6 +10,9 @@ const payloadSchema = z.object({
 });
 
 export async function POST(request: Request) {
+  if (process.env.NODE_ENV !== "production" && request.headers.get("x-vaux-simulate-failure") === "1") {
+    return Response.json({ message: "Temporary service issue. Please try again." }, { status: 503 });
+  }
   let input: unknown;
   try { input = await request.json(); } catch { return Response.json({ message: "Invalid request." }, { status: 400 }); }
   const parsed = payloadSchema.safeParse(input);
