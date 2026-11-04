@@ -3,7 +3,7 @@
 AUX Gesture Wearable 的中英文产品网站原型，探索以自然动作替代屏幕触控的下一代 Human Interface。
 
 - 在线版本：[vaux-beyond-touch-gesture.copperguild.chatgpt.site](https://vaux-beyond-touch-gesture.copperguild.chatgpt.site/)
-- 简短演示：[docs/vaux-demo.mp4](sites/docs/vaux-demo.mp4)
+- 简短演示：[观看演示视频](sites/vaux-gesture/docs/vaux-demo.mp4)
 
 ## 启动方式
 
